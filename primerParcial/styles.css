@@ -1,0 +1,135 @@
+:root{
+    --color-primario: #483d8B;
+    --color-gris-oscuro: #dddddd;
+    --color-gris-claro: #fbfbfb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+footer{
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    font-size: 1.8rem;
+}
+
+footer{
+    border-top: 1px solid var(--color-gris-oscuro);
+    margin-top: 40px;
+}
+
+main{
+    max-width: 1100;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#users-title{
+    font-size: 2.2rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.divisor{
+    border: none;
+    border-top: 1px solid var(--color-gris-oscuro);
+    margin: 15px 0 20px;
+}
+
+.fila-controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filtros-estado{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.filtros-estado label{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.filtros-estado input[type="radio"]{
+    accent-color: var(--color-primario);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.barra-busqueda{
+    border: 1px solid var(--color-gris-oscuro);
+    padding: 10px 14px;
+    width: 300px;
+    border-radius: 2px;
+}
+
+.botones-accion{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.botones-accion button{
+    background-color: white;
+    color: var(--color-primario);
+    border: 1px solid var(--color-primario);
+    padding: 10px 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.botones-accion button:disabled{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead td{
+    text-align: left;
+    padding: 12px 10px;
+    border-bottom: 2px solid var(--color-gris-oscuro);
+}
+
+tbody td{
+    padding: 10px;
+    border-bottom: 1px solid var(--color-gris-oscuro);
+}
+
+tbody tr:nth-child(odd) td{
+    background-color: var(--color-gris-claro);
+}
+
+.user-icon{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.username {
+    color: var(--color-primario);
+}
+
+.tabla-usuarios img{
+    vertical-align: middle;
+}
+    
